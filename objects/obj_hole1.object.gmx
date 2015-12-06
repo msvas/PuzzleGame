@@ -52,7 +52,6 @@ tileSize = 32;
             <kind>1</kind>
             <string>if(!obj_character1.moving) {
     sprite_index = spr_rock_hole1;
-    walkable = true;
 }
 </string>
           </argument>

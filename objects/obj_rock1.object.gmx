@@ -164,8 +164,9 @@ else if(other.moveDown &amp;&amp; !downCol) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!obj_character1.moving) {
-    instance_destroy()
+            <string>if(!obj_character1.moving &amp;&amp; !other.walkable) {
+    instance_destroy();
+    other.walkable = true;
 }
 </string>
           </argument>

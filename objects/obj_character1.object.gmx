@@ -73,62 +73,68 @@ tileSize = 32;
             <kind>1</kind>
             <string>halfTile = tileSize/2 + 1;
 
-if(position_meeting(x + halfTile, y, obj_trap)) {
-    hole = instance_nearest(x + halfTile, y, obj_trap);
-    if(!hole.walkable)
-        canMoveRight = false;
-}
-if(position_meeting(x - halfTile, y, obj_trap)) {
-    hole = instance_nearest(x - halfTile, y, obj_trap);
-    if(!hole.walkable)
-        canMoveLeft = false;
-}
-if(position_meeting(x, y + halfTile, obj_trap)) {
-    hole = instance_nearest(x, y + halfTile, obj_trap);
-    if(!hole.walkable)
-        canMoveDown = false;
-}
-if(position_meeting(x, y - halfTile, obj_trap)) {
-    hole = instance_nearest(x, y - halfTile, obj_trap);
-    if(!hole.walkable)
-        canMoveUp = false;
-}
-
-if(x != target_x || y != target_y) {
-    if(target_x == x) {
-        angle = point_direction(x, y, target_x, target_y);
-        walkDist = lengthdir_y(moveSpeed, angle);
-        if(walkDist &gt; 0 &amp;&amp; canMoveDown) {
-            sprite_index = anim_character1_walking_down;
-            moveDown = true;
-            moving = true;
-            y += round(walkDist);
-        }
-        else if (walkDist &lt; 0 &amp;&amp; canMoveUp) {
-            sprite_index = anim_character1_walking_up;
-            moveUp = true;
-            moving = true;
-            y += round(walkDist);
-        }
-        else {
-            target_x = x;
-            target_y = y;
-        }
+if(global.started) { 
+    if(position_meeting(x + halfTile, y, obj_trap)) {
+        hole = instance_nearest(x + halfTile, y, obj_trap);
+        if(!hole.walkable)
+            canMoveRight = false;
     }
-    else if (target_y == y) {
-        angle = point_direction(x, y, target_x, target_y);
-        walkDist = lengthdir_x(moveSpeed, angle);
-        if(walkDist &gt; 0 &amp;&amp; canMoveRight) {
-            sprite_index = anim_character1_walking_right;
-            moveRight = true;
-            moving = true;
-            x += round(walkDist);
+    if(position_meeting(x - halfTile, y, obj_trap)) {
+        hole = instance_nearest(x - halfTile, y, obj_trap);
+        if(!hole.walkable)
+            canMoveLeft = false;
+    }
+    if(position_meeting(x, y + halfTile, obj_trap)) {
+        hole = instance_nearest(x, y + halfTile, obj_trap);
+        if(!hole.walkable)
+            canMoveDown = false;
+    }
+    if(position_meeting(x, y - halfTile, obj_trap)) {
+        hole = instance_nearest(x, y - halfTile, obj_trap);
+        if(!hole.walkable)
+            canMoveUp = false;
+    }
+    
+    if(x != target_x || y != target_y) {
+        if(target_x == x) {
+            angle = point_direction(x, y, target_x, target_y);
+            walkDist = lengthdir_y(moveSpeed, angle);
+            if(walkDist &gt; 0 &amp;&amp; canMoveDown) {
+                sprite_index = anim_character1_walking_down;
+                moveDown = true;
+                moving = true;
+                y += round(walkDist);
+            }
+            else if (walkDist &lt; 0 &amp;&amp; canMoveUp) {
+                sprite_index = anim_character1_walking_up;
+                moveUp = true;
+                moving = true;
+                y += round(walkDist);
+            }
+            else {
+                target_x = x;
+                target_y = y;
+            }
         }
-        else if (walkDist &lt; 0 &amp;&amp; canMoveLeft) {
-            sprite_index = anim_character1_walking_left;
-            moveLeft = true;
-            moving = true;
-            x += round(walkDist);
+        else if (target_y == y) {
+            angle = point_direction(x, y, target_x, target_y);
+            walkDist = lengthdir_x(moveSpeed, angle);
+            if(walkDist &gt; 0 &amp;&amp; canMoveRight) {
+                sprite_index = anim_character1_walking_right;
+                moveRight = true;
+                moving = true;
+                x += round(walkDist);
+            }
+            else if (walkDist &lt; 0 &amp;&amp; canMoveLeft) {
+                sprite_index = anim_character1_walking_left;
+                moveLeft = true;
+                moving = true;
+                x += round(walkDist);
+            }
+            else {
+                target_x = x;
+                target_y = y;
+            }
         }
         else {
             target_x = x;
@@ -136,25 +142,21 @@ if(x != target_x || y != target_y) {
         }
     }
     else {
-        target_x = x;
-        target_y = y;
+        moving = false;
+        moveUp = false;
+        moveDown = false;
+        moveLeft = false;
+        moveRight = false;
+        sprite_index = anim_character1_idle;
+        //show_debug_message(string(x) + " " + string(target_x));
     }
-}
-else {
-    moving = false;
-    moveUp = false;
-    moveDown = false;
-    moveLeft = false;
-    moveRight = false;
-    sprite_index = anim_character1_idle;
-    //show_debug_message(string(x) + " " + string(target_x));
-}
-
-if !place_meeting(x + 1, y, obj_rock1) {
-    canMoveUp = true;
-    canMoveDown = true;
-    canMoveRight = true;
-    canMoveLeft = true; 
+    
+    if !place_meeting(x + 1, y, obj_rock1) {
+        canMoveUp = true;
+        canMoveDown = true;
+        canMoveRight = true;
+        canMoveLeft = true; 
+    }
 }
 </string>
           </argument>

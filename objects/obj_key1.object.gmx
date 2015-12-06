@@ -33,7 +33,7 @@
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>obj_keyGUI1</whoName>
+        <whoName>obj_GUI1</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
