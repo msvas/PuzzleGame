@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\mus_main</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_floor1</sprite>
     <sprite>sprites\spr_lava1</sprite>
@@ -34,22 +36,46 @@
     <sprite>sprites\spr_keyShadow1</sprite>
     <sprite>sprites\spr_blockGUI</sprite>
     <sprite>sprites\spr_panel1</sprite>
+    <sprite>sprites\spr_grass_flower1</sprite>
+    <sprite>sprites\spr_water1</sprite>
+    <sprite>sprites\spr_water2</sprite>
+    <sprite>sprites\spr_water3</sprite>
+    <sprite>sprites\spr_grass_mushroom</sprite>
+    <sprite>sprites\spr_bush1</sprite>
+    <sprite>sprites\spr_tree_cut1</sprite>
+    <sprite>sprites\spr_tree1</sprite>
+    <sprite>sprites\spr_pot1</sprite>
+    <sprite>sprites\spr_fence_left</sprite>
+    <sprite>sprites\spr_fence_middle</sprite>
+    <sprite>sprites\spr_fence_right</sprite>
+    <sprite>sprites\spr_path_middle1</sprite>
+    <sprite>sprites\spr_path_left1</sprite>
+    <sprite>sprites\spr_path_right1</sprite>
+    <sprite>sprites\spr_path_curve1</sprite>
+    <sprite>sprites\spr_path_curve2</sprite>
+    <sprite>sprites\spr_path_curve3</sprite>
+    <sprite>sprites\spr_path_curve4</sprite>
+    <sprite>sprites\spr_path_curve5</sprite>
+    <sprite>sprites\spr_path_curve6</sprite>
+    <sprite>sprites\spr_path_curve7</sprite>
+    <sprite>sprites\spr_pot2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_adventure</background>
+    <background>background\bkg_main</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\CharacterMovement.gml</script>
+    <script>scripts\Button.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font_main</font>
+  </fonts>
   <objects name="objects">
-    <object>objects\obj_floor1</object>
     <object>objects\obj_hole1</object>
     <object>objects\obj_rock1</object>
     <object>objects\obj_character1</object>
-    <object>objects\obj_grass1</object>
-    <object>objects\obj_grass2</object>
-    <object>objects\obj_grass4</object>
     <object>objects\obj_rock2</object>
     <object>objects\obj_chest1</object>
     <object>objects\obj_key1</object>
@@ -63,19 +89,38 @@
       <object>objects\obj_trap</object>
       <object>objects\obj_solid</object>
       <object>objects\obj_spike</object>
+      <object>objects\obj_floor</object>
     </objects>
     <objects name="GUI">
-      <object>objects\obj_panel1</object>
+      <object>objects\obj_panel_end</object>
       <object>objects\obj_panel_begin</object>
       <object>objects\obj_blockGUI</object>
       <object>objects\obj_GUI1</object>
-      <object>objects\obj_buttons1</object>
+      <object>objects\obj_buttons_menu</object>
+      <object>objects\obj_buttons_level_menu</object>
+    </objects>
+    <objects name="Music">
+      <object>objects\obj_main_music</object>
+    </objects>
+    <objects name="Scenario">
+      <object>objects\obj_grass4</object>
+      <object>objects\obj_grass2</object>
+      <object>objects\obj_floor1</object>
+      <object>objects\obj_grass1</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
+    <room>rooms\levelMenu</room>
+    <room>rooms\testLevel</room>
     <room>rooms\level1</room>
-    <room>rooms\room0</room>
+    <room>rooms\level2</room>
+    <room>rooms\level3</room>
+    <room>rooms\level4</room>
+    <room>rooms\level5</room>
+    <room>rooms\level6</room>
+    <room>rooms\level7</room>
+    <room>rooms\level8</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

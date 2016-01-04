@@ -73,7 +73,7 @@ tileSize = 32;
             <kind>1</kind>
             <string>halfTile = tileSize/2 + 1;
 
-if(global.started) { 
+if(global.started) {
     if(position_meeting(x + halfTile, y, obj_trap)) {
         hole = instance_nearest(x + halfTile, y, obj_trap);
         if(!hole.walkable)
@@ -157,6 +157,9 @@ if(global.started) {
         canMoveRight = true;
         canMoveLeft = true; 
     }
+}
+else {
+    sprite_index = anim_character1_idle;
 }
 </string>
           </argument>
@@ -309,7 +312,7 @@ if(!other.downCol) {
     click_x = device_mouse_x(0);
     click_y = device_mouse_y(0);
     
-    floorId = instance_nearest(click_x, click_y, obj_floor1);
+    floorId = instance_nearest(click_x, click_y, obj_floor);
     target_x = floorId.x;
     target_y = floorId.y;
 }

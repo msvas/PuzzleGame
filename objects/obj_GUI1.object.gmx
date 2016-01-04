@@ -48,9 +48,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(spr_keyShadow1, -1, 32, 14*32);
+            <string>draw_sprite_ext(spr_keyShadow1, -1, 32*global.rate_w, 12*32*global.rate_h, global.rate_w, global.rate_h, 0, c_white, 1);
 if(collected) {
-    draw_sprite(spr_keyGUI1, -1, 32, 14*32);
+    draw_sprite_ext(spr_keyGUI1, -1, 32*global.rate_w, 12*32*global.rate_h, global.rate_w, global.rate_h, 0, c_white, 1);
+}
+
+if(Button(180, 12*32 - 15, 260, 12*32 + 15, "Restart")) {
+    room_goto(global.currentLevel);
 }
 </string>
           </argument>
