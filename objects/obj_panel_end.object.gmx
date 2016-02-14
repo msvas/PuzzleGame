@@ -36,7 +36,8 @@
     }
     if(Button(viewCenterX - 60, viewCenterY + 30, viewCenterX + 60, viewCenterY + 70, "Menu")) {
         room_goto(mainMenu);
-    }    
+    }
+    global.tutorial = false;
 }
 </string>
           </argument>

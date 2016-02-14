@@ -59,6 +59,8 @@
     <sprite>sprites\spr_path_curve6</sprite>
     <sprite>sprites\spr_path_curve7</sprite>
     <sprite>sprites\spr_pot2</sprite>
+    <sprite>sprites\anim_target_hand</sprite>
+    <sprite>sprites\img_pirate_directions</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_adventure</background>
@@ -98,6 +100,10 @@
       <object>objects\obj_GUI1</object>
       <object>objects\obj_buttons_menu</object>
       <object>objects\obj_buttons_level_menu</object>
+      <object>objects\obj_hand_target1</object>
+      <object>objects\obj_hand_target2</object>
+      <object>objects\obj_hand_target3</object>
+      <object>objects\obj_hand_target4</object>
     </objects>
     <objects name="Music">
       <object>objects\obj_main_music</object>
@@ -121,6 +127,8 @@
     <room>rooms\level6</room>
     <room>rooms\level7</room>
     <room>rooms\level8</room>
+    <room>rooms\level9</room>
+    <room>rooms\level10</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
