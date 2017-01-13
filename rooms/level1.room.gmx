@@ -18,6 +18,7 @@ global.started = false;
 
 global.currentLevel = level1;
 global.nextLevel = level2;
+global.levelno = 1;
 
 global.tutorial = true;</code>
   <enableViews>-1</enableViews>

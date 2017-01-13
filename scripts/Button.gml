@@ -19,7 +19,9 @@ centerY = topleftY + height/2;
 
 draw_set_alpha(0.6);
 draw_set_color(c_gray); //Set the color to gray for our button
-draw_rectangle(topleftX, topleftY, bottomrightX, bottomrightY, false); //Draw our button
+//draw_rectangle(topleftX, topleftY, bottomrightX, bottomrightY, false); //Draw our button
+draw_sprite_stretched_ext(spr_gui_button1, -1, topleftX, topleftY, width, height, c_white, 1);
+
 draw_set_color(c_black); //Set the color to black for our text
 draw_set_halign(fa_center); //Center our text (horizontal)
 draw_set_valign(fa_center); //Center our text (verticle)
@@ -35,7 +37,7 @@ draw_set_halign(fa_left); //Reset the horizontal align
 if (device_mouse_check_button_pressed(0, mb_left)) {
     click_x = device_mouse_x_to_gui(0);// * rate_w;
     click_y = device_mouse_y_to_gui(0);// * rate_h;
-    show_debug_message(string(click_x) + " " + string(click_y) + " " + string(topleftX) + " " + string(topleftY) + " " + string(bottomrightX) + " " + string(bottomrightY));
+    //show_debug_message(string(click_x) + " " + string(click_y) + " " + string(topleftX) + " " + string(topleftY) + " " + string(bottomrightX) + " " + string(bottomrightY));
     if(point_in_rectangle(click_x, click_y, topleftX, topleftY, bottomrightX, bottomrightY)) {
         return true;
     }

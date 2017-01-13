@@ -61,6 +61,8 @@
     <sprite>sprites\spr_pot2</sprite>
     <sprite>sprites\anim_target_hand</sprite>
     <sprite>sprites\img_pirate_directions</sprite>
+    <sprite>sprites\spr_bridge1</sprite>
+    <sprite>sprites\spr_gui_button1</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_adventure</background>
@@ -70,9 +72,11 @@
   <scripts name="scripts">
     <script>scripts\CharacterMovement.gml</script>
     <script>scripts\Button.gml</script>
+    <script>scripts\SwipeCheck.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_main</font>
+    <font>fonts\font_end</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_hole1</object>
@@ -80,6 +84,7 @@
     <object>objects\obj_character1</object>
     <object>objects\obj_rock2</object>
     <object>objects\obj_chest1</object>
+    <object>objects\obj_bridge1</object>
     <object>objects\obj_key1</object>
     <objects name="Buttons">
       <object>objects\obj_button1</object>
@@ -92,6 +97,7 @@
       <object>objects\obj_solid</object>
       <object>objects\obj_spike</object>
       <object>objects\obj_floor</object>
+      <object>objects\obj_rock_solid</object>
     </objects>
     <objects name="GUI">
       <object>objects\obj_panel_end</object>
@@ -113,6 +119,11 @@
       <object>objects\obj_grass2</object>
       <object>objects\obj_floor1</object>
       <object>objects\obj_grass1</object>
+      <object>objects\obj_fence1</object>
+      <object>objects\obj_fence2</object>
+      <object>objects\obj_fence3</object>
+      <object>objects\obj_tree1</object>
+      <object>objects\obj_bush1</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -129,6 +140,13 @@
     <room>rooms\level8</room>
     <room>rooms\level9</room>
     <room>rooms\level10</room>
+    <room>rooms\level11</room>
+    <room>rooms\level12</room>
+    <room>rooms\level13</room>
+    <room>rooms\level14</room>
+    <room>rooms\level15</room>
+    <room>rooms\level16</room>
+    <room>rooms\level17</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

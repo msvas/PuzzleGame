@@ -14,7 +14,10 @@
 global.started = false;
 
 global.currentLevel = level5;
-global.nextLevel = level6;</code>
+global.nextLevel = level6;
+global.levelno = 5;
+
+global.tutorial = false;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

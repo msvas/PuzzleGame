@@ -161,6 +161,7 @@ if(global.started) {
 else {
     sprite_index = anim_character1_idle;
 }
+//show_debug_message(string(canMoveUp) + string(canMoveDown) + string(canMoveLeft) + string(canMoveRight));
 </string>
           </argument>
         </arguments>
@@ -260,30 +261,31 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(other.rightCol) {
+            <string>if(other.rightCol &amp;&amp; (other.x &gt; x)) {
     canMoveRight = false;
 }
-if(other.leftCol) {
+if(other.leftCol &amp;&amp; (other.x &lt; x)) {
     canMoveLeft = false;
 }
-if(other.upCol) {
+if(other.upCol &amp;&amp; (other.y &lt; y)) {
     canMoveUp = false;
 }
-if(other.downCol) {
+if(other.downCol &amp;&amp; (other.y &gt; y)) {
     canMoveDown = false;
 }
-if(!other.rightCol) {
+if(!other.rightCol &amp;&amp; (other.x &gt; x)) {
     canMoveRight = true;
 }
-if(!other.leftCol) {
+if(!other.leftCol &amp;&amp; (other.x &lt; x)) {
     canMoveLeft = true;
 }
-if(!other.upCol) {
+if(!other.upCol &amp;&amp; (other.y &lt; y)) {
     canMoveUp = true;
 }
-if(!other.downCol) {
+if(!other.downCol &amp;&amp; (other.y &gt; y)) {
     canMoveDown = true;
 }
+
 
 
 </string>

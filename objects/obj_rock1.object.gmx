@@ -54,28 +54,56 @@ tileSize = 32;
           <argument>
             <kind>1</kind>
             <string>halfTile = tileSize/2 + 1;
-if(position_meeting(x + halfTile, y, obj_solid) || position_meeting(x + halfTile, y, obj_rock1) || position_meeting(x + halfTile, y, obj_key1)) {
+if(position_meeting(x + halfTile, y, obj_solid) 
+    || position_meeting(x + halfTile, y, obj_rock1) 
+    || position_meeting(x + halfTile, y, obj_rock_solid) 
+    || position_meeting(x + halfTile, y, obj_key1)) {
     rightCol = true;
 }
-if(position_meeting(x - halfTile, y, obj_solid) || position_meeting(x - halfTile, y, obj_rock1) || position_meeting(x - halfTile, y, obj_key1)) {
+if(position_meeting(x - halfTile, y, obj_solid) 
+    || position_meeting(x - halfTile, y, obj_rock1) 
+    || position_meeting(x - halfTile, y, obj_rock_solid)
+    || position_meeting(x - halfTile, y, obj_key1)) {
     leftCol = true;
 }
-if(position_meeting(x, y + halfTile, obj_solid) || position_meeting(x, y + halfTile, obj_rock1) || position_meeting(x, y + halfTile, obj_key1)) {
+if(position_meeting(x, y + halfTile, obj_solid) 
+    || position_meeting(x, y + halfTile, obj_rock1)
+    || position_meeting(x, y + halfTile, obj_rock_solid) 
+    || position_meeting(x, y + halfTile, obj_key1)) {
     downCol = true;
 }
-if(position_meeting(x, y - halfTile, obj_solid) || position_meeting(x, y - halfTile, obj_rock1) || position_meeting(x, y - halfTile, obj_key1)) {
+if(position_meeting(x, y - halfTile, obj_solid) 
+    || position_meeting(x, y - halfTile, obj_rock1) 
+    || position_meeting(x, y - halfTile, obj_rock_solid) 
+    || position_meeting(x, y - halfTile, obj_key1)) {
     upCol = true;
 }
-if(!position_meeting(x + halfTile, y, obj_solid) &amp;&amp; !position_meeting(x + halfTile, y, obj_rock1) &amp;&amp; !position_meeting(x + halfTile, y, obj_spike) &amp;&amp; !position_meeting(x + halfTile, y, obj_key1)) {
+if(!position_meeting(x + halfTile, y, obj_solid) 
+    &amp;&amp; !position_meeting(x + halfTile, y, obj_rock1) 
+    &amp;&amp; !position_meeting(x + halfTile, y, obj_rock_solid) 
+    &amp;&amp; !position_meeting(x + halfTile, y, obj_spike) 
+    &amp;&amp; !position_meeting(x + halfTile, y, obj_key1)) {
     rightCol = false;
 }
-if(!position_meeting(x - halfTile, y, obj_solid) &amp;&amp; !position_meeting(x - halfTile, y, obj_rock1) &amp;&amp; !position_meeting(x - halfTile, y, obj_spike) &amp;&amp; !position_meeting(x - halfTile, y, obj_key1)) {
+if(!position_meeting(x - halfTile, y, obj_solid) 
+    &amp;&amp; !position_meeting(x - halfTile, y, obj_rock1) 
+    &amp;&amp; !position_meeting(x - halfTile, y, obj_rock_solid)
+    &amp;&amp; !position_meeting(x - halfTile, y, obj_spike) 
+    &amp;&amp; !position_meeting(x - halfTile, y, obj_key1)) {
     leftCol = false;
 }
-if(!position_meeting(x, y + halfTile, obj_solid) &amp;&amp; !position_meeting(x, y + halfTile, obj_rock1) &amp;&amp; !position_meeting(x, y + halfTile, obj_spike) &amp;&amp; !position_meeting(x, y + halfTile, obj_key1)) {
+if(!position_meeting(x, y + halfTile, obj_solid) 
+    &amp;&amp; !position_meeting(x, y + halfTile, obj_rock1) 
+    &amp;&amp; !position_meeting(x, y + halfTile, obj_rock_solid)
+    &amp;&amp; !position_meeting(x, y + halfTile, obj_spike) 
+    &amp;&amp; !position_meeting(x, y + halfTile, obj_key1)) {
     downCol = false;
 }
-if(!position_meeting(x, y - halfTile, obj_solid) &amp;&amp; !position_meeting(x, y - halfTile, obj_rock1) &amp;&amp; !position_meeting(x, y - halfTile, obj_spike) &amp;&amp; !position_meeting(x, y - halfTile, obj_key1)) {
+if(!position_meeting(x, y - halfTile, obj_solid)
+    &amp;&amp; !position_meeting(x, y - halfTile, obj_rock1) 
+    &amp;&amp; !position_meeting(x, y - halfTile, obj_rock_solid)
+    &amp;&amp; !position_meeting(x, y - halfTile, obj_spike) 
+    &amp;&amp; !position_meeting(x, y - halfTile, obj_key1)) {
     upCol = false;
 }
 
@@ -107,6 +135,7 @@ if(position_meeting(x, y - halfTile, obj_spike)) {
     else if (!position_meeting(x, y - halfTile, obj_solid) &amp;&amp; !position_meeting(x, y - halfTile, obj_rock1))
         upCol = false;
 }
+//show_debug_message("up " + string(upCol) + " down " + string(downCol) + " right " + string(rightCol) + " left " + string(leftCol));
 </string>
           </argument>
         </arguments>

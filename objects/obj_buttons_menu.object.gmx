@@ -95,10 +95,10 @@ if mouse_check_button_pressed(mb_left) &amp;&amp; hovering &gt; 0 //If the mouse
 //Lastly we set hovering back to 0
 hovering = 0;
 */
-if(Button(60, 100, 260, 150, "Start Game")) {
+if(Button(60, 230, 260, 280, "Start Game")) {
     room_goto(levelMenu);
 }
-Button(60, 180, 260, 230, "How To Play");
+Button(60, 300, 260, 350, "How To Play");
 </string>
           </argument>
         </arguments>
