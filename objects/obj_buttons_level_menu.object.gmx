@@ -82,10 +82,10 @@ if((levelPage == 1) || (swipeDirection == 1 &amp;&amp; levelPage == 0)) {
     levelPage = 1;
     buttons[0] = level16;
     buttons[1] = level17;
+    buttons[2] = level18;
+    buttons[3] = level19;
+    buttons[4] = level20;
 
-    showBtn[2] = false;
-    showBtn[3] = false;
-    showBtn[4] = false;
     showBtn[5] = false;
     showBtn[6] = false;
     showBtn[7] = false;
@@ -99,6 +99,9 @@ if((levelPage == 1) || (swipeDirection == 1 &amp;&amp; levelPage == 0)) {
     
     buttonText[0] = "16";
     buttonText[1] = "17";
+    buttonText[2] = "18";
+    buttonText[3] = "19";
+    buttonText[4] = "20";
 }
 if((levelPage == 0) || (swipeDirection == -1 &amp;&amp; levelPage == 1)) {
     levelPage = 0;

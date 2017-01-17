@@ -49,6 +49,7 @@
     <sprite>sprites\spr_fence_middle</sprite>
     <sprite>sprites\spr_fence_right</sprite>
     <sprite>sprites\spr_path_middle1</sprite>
+    <sprite>sprites\spr_path_middle2</sprite>
     <sprite>sprites\spr_path_left1</sprite>
     <sprite>sprites\spr_path_right1</sprite>
     <sprite>sprites\spr_path_curve1</sprite>
@@ -58,11 +59,36 @@
     <sprite>sprites\spr_path_curve5</sprite>
     <sprite>sprites\spr_path_curve6</sprite>
     <sprite>sprites\spr_path_curve7</sprite>
+    <sprite>sprites\spr_path_curve8</sprite>
+    <sprite>sprites\spr_path_curve9</sprite>
+    <sprite>sprites\spr_path_curve10</sprite>
+    <sprite>sprites\spr_path_curve11</sprite>
+    <sprite>sprites\spr_path_surve12</sprite>
+    <sprite>sprites\spr_path_curve13</sprite>
+    <sprite>sprites\spr_path_curve14</sprite>
+    <sprite>sprites\spr_path_curve15</sprite>
+    <sprite>sprites\spr_path_curve16</sprite>
+    <sprite>sprites\spr_path_curve17</sprite>
+    <sprite>sprites\spr_path_grass1</sprite>
+    <sprite>sprites\spr_path_grass2</sprite>
     <sprite>sprites\spr_pot2</sprite>
     <sprite>sprites\anim_target_hand</sprite>
     <sprite>sprites\img_pirate_directions</sprite>
     <sprite>sprites\spr_bridge1</sprite>
     <sprite>sprites\spr_gui_button1</sprite>
+    <sprite>sprites\spr_cliff1</sprite>
+    <sprite>sprites\spr_cliff2</sprite>
+    <sprite>sprites\spr_cliff3</sprite>
+    <sprite>sprites\spr_cliff4</sprite>
+    <sprite>sprites\spr_grass_cliff1</sprite>
+    <sprite>sprites\spr_path_straight1</sprite>
+    <sprite>sprites\spr_path_straigth2</sprite>
+    <sprite>sprites\spr_path_corner1</sprite>
+    <sprite>sprites\spr_path_corner2</sprite>
+    <sprite>sprites\spr_grass_mushroom1</sprite>
+    <sprite>sprites\spr_grass_flowers1</sprite>
+    <sprite>sprites\spr_path_end1</sprite>
+    <sprite>sprites\spr_path_end2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_adventure</background>
@@ -118,11 +144,52 @@
       <object>objects\obj_grass4</object>
       <object>objects\obj_grass2</object>
       <object>objects\obj_floor1</object>
+      <object>objects\obj_path_middle1</object>
+      <object>objects\obj_path_middle2</object>
+      <object>objects\obj_path_corner1</object>
+      <object>objects\obj_path_corner2</object>
+      <object>objects\obj_path_left1</object>
+      <object>objects\obj_path_right1</object>
+      <object>objects\obj_path_curve1</object>
+      <object>objects\obj_path_curve2</object>
+      <object>objects\obj_path_curve3</object>
+      <object>objects\obj_path_curve4</object>
+      <object>objects\obj_path_curve5</object>
+      <object>objects\obj_path_curve6</object>
+      <object>objects\obj_path_curve7</object>
+      <object>objects\obj_path_curve8</object>
+      <object>objects\obj_path_curve9</object>
+      <object>objects\obj_path_curve10</object>
+      <object>objects\obj_path_curve11</object>
+      <object>objects\obj_path_curve12</object>
+      <object>objects\obj_path_curve13</object>
+      <object>objects\obj_path_curve14</object>
+      <object>objects\obj_path_curve15</object>
+      <object>objects\obj_path_curve16</object>
+      <object>objects\obj_path_curve17</object>
+      <object>objects\obj_path_straigth1</object>
+      <object>objects\obj_path_straigth2</object>
+      <object>objects\obj_path_end1</object>
+      <object>objects\obj_path_end2</object>
+      <object>objects\obj_path_grass1</object>
+      <object>objects\obj_path_grass2</object>
+      <object>objects\obj_grass_mushroom1</object>
+      <object>objects\obj_grass_flower1</object>
+      <object>objects\obj_grass_cliff1</object>
       <object>objects\obj_grass1</object>
+      <object>objects\obj_grass_flower2</object>
+      <object>objects\obj_grass_mushroom2</object>
       <object>objects\obj_fence1</object>
       <object>objects\obj_fence2</object>
       <object>objects\obj_fence3</object>
       <object>objects\obj_tree1</object>
+      <object>objects\obj_water1</object>
+      <object>objects\obj_water2</object>
+      <object>objects\obj_water3</object>
+      <object>objects\obj_pot1</object>
+      <object>objects\obj_tree2</object>
+      <object>objects\obj_pot2</object>
+      <object>objects\obj_cliff4</object>
       <object>objects\obj_bush1</object>
     </objects>
   </objects>
@@ -147,6 +214,10 @@
     <room>rooms\level15</room>
     <room>rooms\level16</room>
     <room>rooms\level17</room>
+    <room>rooms\level18</room>
+    <room>rooms\level19</room>
+    <room>rooms\level20</room>
+    <room>rooms\level21</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

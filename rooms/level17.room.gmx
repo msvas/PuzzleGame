@@ -14,7 +14,7 @@
 global.started = false;
 
 global.currentLevel = level17;
-global.nextLevel = level1;
+global.nextLevel = level18;
 global.levelno = 17;
 
 global.tutorial = false;</code>

@@ -53,8 +53,12 @@ if(collected) {
     draw_sprite_ext(spr_keyGUI1, -1, 32*global.rate_w, 12*32*global.rate_h, global.rate_w, global.rate_h, 0, c_white, 1);
 }
 
-if(Button(180, 12*32 - 15, 260, 12*32 + 15, "Restart")) {
+if(Button(230, 12*32 - 15, 310, 12*32 + 15, "Restart")) {
     room_goto(global.currentLevel);
+}
+
+if(Button(140, 12*32 - 15, 220, 12*32 + 15, "Menu")) {
+    room_goto(levelMenu);
 }
 </string>
           </argument>
