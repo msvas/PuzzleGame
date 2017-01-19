@@ -16,7 +16,33 @@ base_h = 480;
 global.rate_w = display_get_width() / base_w;
 global.rate_h = display_get_height() / base_h;
 
-global.currentLevel = level1;
+ini_open('savedata.ini');
+global.toplevel = ini_read_real('save1', 'level', 1);
+ini_close();
+
+lvlsaved[0] = level1;
+lvlsaved[1] = level2;
+lvlsaved[2] = level3;
+lvlsaved[3] = level4;
+lvlsaved[4] = level5;
+lvlsaved[5] = level6;
+lvlsaved[6] = level7;
+lvlsaved[7] = level8;
+lvlsaved[8] = level9;
+lvlsaved[9] = level10;
+lvlsaved[10] = level11;
+lvlsaved[11] = level12;
+lvlsaved[12] = level13;
+lvlsaved[13] = level14;
+lvlsaved[14] = level15;
+lvlsaved[15] = level16;
+lvlsaved[16] = level17;
+lvlsaved[17] = level18;
+lvlsaved[18] = level19;
+lvlsaved[19] = level20;
+lvlsaved[20] = level21;
+
+global.currentLevel = lvlsaved[global.toplevel - 1];
 global.nextLevel = level2;</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>

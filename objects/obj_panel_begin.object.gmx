@@ -48,7 +48,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(levelStarted) {
+            <string>base_w = 320;
+base_h = 480;
+rate_w = window_get_width() / base_w;
+rate_h = window_get_height() / base_h;
+
+if(levelStarted) {
     viewCenterX = (view_xview[0] + (view_wview[0]/2));
     viewCenterY = (view_yview[0] + (view_hview[0]/2));
     draw_sprite_ext(spr_panel1, -1, viewCenterX * global.rate_w, viewCenterY * global.rate_h, global.rate_w, global.rate_h, 0, c_white, 1);
@@ -60,7 +65,7 @@
     draw_set_halign(fa_center); //Center our text (horizontal)
     draw_set_valign(fa_center); //Center our text (verticle)
     draw_set_font(font_main);
-    draw_text((viewCenterX - 3) * global.rate_w, (viewCenterY - 70) * global.rate_h, "Welcome to level " + string(global.levelno) + "!"); //Draw our button text
+    draw_text_transformed((viewCenterX - 3) * global.rate_w, (viewCenterY - 70) * global.rate_h, "Welcome to level " + string(global.levelno) + "!", 1, 1, 0); //Draw our button text
     
     if(Button(viewCenterX - 60, viewCenterY + 30, viewCenterX + 60, viewCenterY + 70, "Start")) {
         global.started = true;

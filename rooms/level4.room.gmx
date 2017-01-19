@@ -20,7 +20,14 @@ global.currentLevel = level4;
 global.nextLevel = level5;
 global.levelno = 4;
 
-global.tutorial = false;</code>
+global.tutorial = false;
+
+if (global.levelno &gt; global.toplevel) {
+    global.toplevel = global.levelno;
+    ini_open('savedata.ini');
+    ini_write_real('save1', 'level', global.toplevel);
+    ini_close();
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
