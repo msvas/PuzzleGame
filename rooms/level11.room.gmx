@@ -272,7 +272,6 @@ if (global.levelno &gt; global.toplevel) {
     <instance objName="obj_floor1" x="192" y="160" name="inst_C93E0E9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor1" x="192" y="192" name="inst_6BDE74B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor1" x="192" y="224" name="inst_AED01CD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="0" y="0" name="inst_B7E647A8" locked="0" code="" scaleX="0" scaleY="0" colour="0" rotation="0"/>
     <instance objName="obj_path_curve8" x="256" y="288" name="inst_DED1F1FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_path_curve9" x="256" y="320" name="inst_00D2E6D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_path_curve4" x="256" y="352" name="inst_FEF18581" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

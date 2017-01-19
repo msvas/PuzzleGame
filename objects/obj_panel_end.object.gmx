@@ -40,7 +40,7 @@ if(obj_chest1.levelWin) {
     draw_set_halign(fa_center); //Center our text (horizontal)
     draw_set_valign(fa_center); //Center our text (verticle)
     draw_set_font(font_end);
-    draw_text_transformed((viewCenterX) * global.rate_w, (viewCenterY - 70) * global.rate_h, "You completed level " + string(global.levelno) + "!", 1, 1, 0); //Draw our button text
+    draw_text_transformed((viewCenterX) * global.rate_w, (viewCenterY - 70) * global.rate_h, "You completed level " + string(global.levelno) + "!", global.fontratio, global.fontratio, 0); //Draw our button text
     
     if(Button(viewCenterX - 60, viewCenterY - 30, viewCenterX + 60, viewCenterY + 10, "Next")) {
         room_goto(global.nextLevel);

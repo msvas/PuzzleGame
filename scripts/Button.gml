@@ -26,7 +26,7 @@ draw_set_color(c_black); //Set the color to black for our text
 draw_set_halign(fa_center); //Center our text (horizontal)
 draw_set_valign(fa_center); //Center our text (verticle)
 draw_set_font(font_main);
-draw_text_transformed(centerX, centerY, text, 1, 1, 0); //Draw our button text
+draw_text_transformed(centerX, centerY, text, global.fontratio, global.fontratio, 0); //Draw our button text
 
 //Now we clean up our drawing
 draw_set_alpha(1); //Reset the alpha
