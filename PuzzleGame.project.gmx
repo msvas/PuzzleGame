@@ -68,6 +68,7 @@
     <sprite>sprites\spr_path_curve14</sprite>
     <sprite>sprites\spr_path_curve15</sprite>
     <sprite>sprites\spr_path_curve16</sprite>
+    <sprite>sprites\spr_path_curve23</sprite>
     <sprite>sprites\spr_path_curve17</sprite>
     <sprite>sprites\spr_path_grass1</sprite>
     <sprite>sprites\spr_path_grass2</sprite>
@@ -177,6 +178,7 @@
       <object>objects\obj_path_curve20</object>
       <object>objects\obj_path_curve21</object>
       <object>objects\obj_path_curve22</object>
+      <object>objects\obj_path_curve23</object>
       <object>objects\obj_path_straigth1</object>
       <object>objects\obj_path_straigth2</object>
       <object>objects\obj_path_end1</object>
