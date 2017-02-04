@@ -89,6 +89,11 @@
     <sprite>sprites\spr_grass_flowers1</sprite>
     <sprite>sprites\spr_path_end1</sprite>
     <sprite>sprites\spr_path_end2</sprite>
+    <sprite>sprites\spr_path_curve19</sprite>
+    <sprite>sprites\spr_path_curve20</sprite>
+    <sprite>sprites\spr_path_curve21</sprite>
+    <sprite>sprites\spr_path_curve22</sprite>
+    <sprite>sprites\spr_path_curve18</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_adventure</background>
@@ -167,6 +172,11 @@
       <object>objects\obj_path_curve15</object>
       <object>objects\obj_path_curve16</object>
       <object>objects\obj_path_curve17</object>
+      <object>objects\obj_path_curve18</object>
+      <object>objects\obj_path_curve19</object>
+      <object>objects\obj_path_curve20</object>
+      <object>objects\obj_path_curve21</object>
+      <object>objects\obj_path_curve22</object>
       <object>objects\obj_path_straigth1</object>
       <object>objects\obj_path_straigth2</object>
       <object>objects\obj_path_end1</object>

@@ -288,6 +288,7 @@ if (global.levelno &gt; global.toplevel) {
     <instance objName="obj_path_middle2" x="320" y="256" name="inst_892D3F12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor1" x="224" y="224" name="inst_33CE28B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rock1" x="256" y="288" name="inst_9DA0051F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hole1" x="0" y="416" name="inst_5F08B2F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bkg_adventure" x="0" y="0" w="16" h="16" xo="176" yo="160" id="10000001" name="inst_E4D3642B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
