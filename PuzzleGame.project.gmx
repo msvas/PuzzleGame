@@ -134,6 +134,7 @@
     <objects name="GUI">
       <object>objects\obj_panel_end</object>
       <object>objects\obj_panel_begin</object>
+      <object>objects\obj_panel_credits</object>
       <object>objects\obj_blockGUI</object>
       <object>objects\obj_GUI1</object>
       <object>objects\obj_buttons_menu</object>
